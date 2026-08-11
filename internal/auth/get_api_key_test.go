@@ -26,7 +26,7 @@ func TestGetAPIKey(t *testing.T) {
 			wantErr: nil,
 		},
 		{
-			name: "returns error when authorization header is missing",
+			name:    "returns error when authorization header is missing",
 			headers: map[string][]string{},
 			want:    "",
 			wantErr: auth.ErrNoAuthHeaderIncluded,
